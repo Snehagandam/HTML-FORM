@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+     <table>
+         <tr>
+             <td>  
+                <form  autocomplete="off">
+                    <div>
+                        <label> First Name </label>
+                        <input type="text" placeholder="Enter name" name="fname" id="firstname"> 
+                       </div>
+
+                       <div>
+                        <label> Last Name </label>
+                        <input type="text" placeholder="Enter name" name="lname" id="lastname"> 
+                       </div>
+
+                       <div>
+                        <label> Address</label>
+                        <input type="text" placeholder="Enter Address" name="address" id="address"> 
+                       </div>
+
+
+                       <div>
+                        <label> Pincode</label>
+                        <input type="text" placeholder="Enter pincode" name="pinocde" id="pincode"> 
+                       </div>
+
+                        <div id="gen">
+                            <label>Geneder</label>
+                       <input type="radio" name="gender"  id="gen1" value="male" required > Male        
+                       <input type="radio" name="gender" id="gen2" value="female" required > Female  
+                     </div>
+
+                     <br>
+                     <div>
+                         <lable>Choice Food</lable>
+                        <select name="choosefood" id="food">
+                            <!-- <option value="" id="food">--Choice of food--</option> -->
+                            <option id="food">Idli</option>
+                            <option id="food">Dosa</option>
+                            <option id="food">Wada</option>
+                            <option id="food">Poha</option>
+                            <option id="food">Puri</option>
+                        </select>
+                     </div>
+
+                     <br>
+                     <div>
+                         <lable>State</lable>
+                        <input type="text" placeholder="Enter State" list="statelist" id="state" required > 
+                        <datalist id="statelist">
+                            <option>Maharatstra</option>
+                            <option>Telangana</option>
+                            <option>Andrapradesh</option>
+                            <option>Tamilnadu</option>
+                        </datalist>    
+                     </div>
+
+                     <div>
+                         <lable>Country</lable>
+                        <input type="text" placeholder="Enter Conutry" list="countrylist" id="country" required > 
+                        <datalist id="countrylist">
+                            <option>India</option>
+                            <option>US</option>
+                            <option>New York</option>
+                            <option>UK</option>
+                        </datalist>  
+                     </div>
+
+                     <div class="form-action-buttons">
+                         <!-- <input type="submit" value="Submit">  -->
+
+                         <button onclick="event.preventDefault();onformsubmit();">Submit</button>
+
+                     </div>
+                </form>
+            </td>
+             <td>   
+                 <table class="list" id="formlist">
+             <thead>
+                 <tr>
+                 <th>First Name</th>
+                 <th>Last Name</th>
+                 <th>Address</th>
+                 <th>Pincode</th> 
+                 <th>Gender</th>
+                 <th>Choice of food</th>
+                 <th>State</th>
+                 <th>Country</th>
+                </tr>
+             </thead>
+             <tbody>
+
+             </tbody>
+            </table>
+             </td>
+         </tr>
+     </table>
+
+
+     <script src="script.js"></script>
+</body>
+</html>
